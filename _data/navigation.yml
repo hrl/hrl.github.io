@@ -1,0 +1,16 @@
+# Site navigation links
+
+- title: Latest
+  url: /
+
+- title: About
+  url: /about/
+
+- title: Life
+  url: /life/
+
+- title: Notes
+  url: /notes/
+
+- title: Search
+  url: /search/

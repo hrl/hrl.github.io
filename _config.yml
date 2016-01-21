@@ -1,0 +1,72 @@
+# Site wide configuration
+
+title: Bamboo Forest
+locale: zh_CN
+description: #
+logo: site-logo.jpg
+search: true
+url: http://blog.pandas.moe
+
+# Jekyll configuration
+
+permalink:   /:year/:month/:day/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Octopress
+
+# Default extensions
+post_ext: md
+page_ext: md
+
+# Found in _templates/
+post_layout: post
+page_layout: page
+
+# Format titles with titlecase?
+titlecase: true
+
+
+# Site owner
+owner:
+  name: Panda
+  avatar: panda.jpg
+  email: i at pandas.moe
+  disqus-shortname: bamboo-forest
+  twitter: #username
+  facebook: #username
+  github: hrl
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: 黄瑞麟
+    analytics: UA-72688739-1
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+
+comments: true
