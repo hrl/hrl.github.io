@@ -251,3 +251,21 @@ PHP源码
 ```
 8Ps3H0GWbn5rd9S7GmAdgQNdkhPkq9cw
 ```
+
+# Level17
+
+PHP源码
+
+{% gist hrl/f4c3114304f51ab51ac0 %}
+
+基本思路跟Level15一样，但是不能靠返回的内容判断了，所以只有靠sleep来盲注了，碰到网络波动就比较尴尬了…保险一点的话sleep的时间得设长一点
+
+先试试`natas18" AND SLEEP(10)#`，确定用户名确实是`natas18`，剩下的部分就跟Level15大同小异了，因为二分在这里太慢，这里就直接判断了，并且各个位并行请求
+
+{% gist hrl/3edf35c657bb970006bc %}
+
+最后拿到natas18的密码
+
+```
+xvKIqDjy4OPv7wCRgDlmj0pFsCsDjhdP
+```
