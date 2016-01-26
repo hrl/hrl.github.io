@@ -375,3 +375,21 @@ PHP源码
 ```
 GHF6X7YwACaYYssHVY05cFq83hRktl4c
 ```
+
+# Level25
+
+PHP源码
+
+{% gist hrl/78e203d684bcdcae01ab %}
+
+注意到网页内容是include进来的，而且logRequest内有一个可以让我们填任意字符的地方，那么下一步就是想办法让它include进来这个log文件。
+
+检查目录遍历的函数里只替换了一次`../`，所以如果我们输入`....//`的话，替换之后就变成了`../`，多重复几次就可以到达根目录，然后访问到log文件了。
+
+最后在UA里插一段`<?php include('/etc/natas_webpass/natas26') ?>`就可以拿到密码了。
+
+拿到natas26的密码
+
+```
+oGgWAJ7zcGT28vYazGo4rkhOPDhBu34T
+```
