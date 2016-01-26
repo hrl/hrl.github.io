@@ -186,7 +186,7 @@ PHP源码核心部分
 
 之后访问上传上去的php页面得到natas13的密码
 
-```text
+```
 jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY
 ```
 
@@ -202,7 +202,7 @@ PHP源码，与Level12不同的部分
 
 之后访问上传上去的php页面得到natas14的密码
 
-```text
+```
 Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1
 ```
 
