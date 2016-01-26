@@ -19,3 +19,14 @@ date: 2016-01-26T16:24:00+08:00
 
 同Level0,可从菜单内打开开发者工具查看源码
 {% gist hrl/c1373e0b0630de86a294 %}
+
+# Level2
+
+源码内原来放密码的地方变成了一张图
+{% gist hrl/fe5ea2882076e67221fe %}
+
+图片本身没有什么特殊的，但是访问/files可以看到一个users.txt，里面存着natas3的密码
+
+```
+sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+```
