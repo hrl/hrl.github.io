@@ -205,3 +205,15 @@ PHP源码，与Level12不同的部分
 ```text
 Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1
 ```
+
+# Level14
+
+PHP源码
+
+{% gist hrl/119d2b028d63ed07d018 %}
+
+只需要这个SQL语句有结果就行了，于是username里填上`" OR 1=1;#`，让这个语句返回所有结果，password随便打点什么上去。得到natas15的密码
+
+```
+AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J
+```
