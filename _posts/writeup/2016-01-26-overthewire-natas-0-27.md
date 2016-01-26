@@ -48,10 +48,7 @@ Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
 # Level4
 
 提示信息
-
-```
-Access disallowed. You are visiting from "" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"
-```
+{% gist hrl/564c9d621b303794cdcf %}
 
 修改Header `Referer: http://natas5.natas.labs.overthewire.org/` 之后访问，得到natas5的密码
 
