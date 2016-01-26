@@ -315,3 +315,15 @@ PHP源码核心部分
 ```
 eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
 ```
+
+# Level20
+
+PHP源码核心部分
+
+{% gist hrl/3f7df014402240e49795 %}
+
+注意到读session的函数里是直接按照`\n`切割，而保存的时候没有对value做任何检查，于是在value里插一个换行符就可以了，拿到natas21的密码
+
+```
+IFekPyrQXftziDEsUr3x21sYuahypdgJ
+```
