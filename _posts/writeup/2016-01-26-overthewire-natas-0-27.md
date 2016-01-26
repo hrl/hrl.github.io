@@ -351,3 +351,15 @@ url里加个?revelio=1就行，Postman/Burp或者写脚本不自动跟随重定�
 ```
 D0vlad33nQF0Hz2EP255TP5wSW9ZsRSE
 ```
+
+# Level23
+
+PHP源码
+
+{% gist hrl/b7c565ac3a7193b8855b %}
+
+尴尬的隐式类型转换…填`11iloveyou`就好。拿到natas24的密码
+
+```
+OsRmXFguozKpTZZ5X14zNO43379LZveg
+```
