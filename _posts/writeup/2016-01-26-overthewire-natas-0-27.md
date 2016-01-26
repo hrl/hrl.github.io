@@ -173,3 +173,19 @@ PHP源码核心部分
 ```
 EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3
 ```
+
+# Level12
+
+PHP源码核心部分
+
+{% gist hrl/8f6f24b83b3abbc90b37 %}
+
+未对扩展名做检测，于是将表单中 `filename` 项改为.php结尾，上传如下文件
+
+{% gist hrl/f97a80f493c627002e76 %}
+
+之后访问上传上去的php页面得到natas13的密码
+
+```text
+jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY
+```
