@@ -409,3 +409,27 @@ PHP源码核心部分
 ```
 55TBjpPZUUJgVP5b3BnbG6ON9uDPVzCJ
 ```
+
+# Level27
+
+PHP源码
+
+{% gist hrl/ee1fdabe2a7bd01c5f54 %}
+
+大概是看一下有没有这个用户名，有的话检测用户名和密码这一对数据是否存在，如果存在就去拿用户名对应的数据；如果没有这个用户名就创建一个新的。
+
+那么下一步要做的应该是自己插一个`natas28`用户进去了…然而这代码并没有可以让我们注入的地方…尴尬…
+
+看了看开头的注释，`username`长度只有64，然后翻了翻MySQL的[文档](https://dev.mysql.com/doc/refman/5.0/en/char.html)，注意到
+
+> Before MySQL 5.0.3, trailing spaces are removed from values when they are stored into a VARCHAR column; this means that the spaces also are absent from retrieved values.
+
+也就是说后面的空格会被删掉，于是尝试令`username`=`natas28`+57个空格，发现此时还是会当`natas28`处理。
+
+然后尝试令`username`=`natas28`+57个空格+1个任意字符，`password`留空，这时`validUser`返回了`False`，于是系统会尝试插入这个用户，首先末尾超出的字符被截断，只留下`natas28`+57个空格，然后末尾空格被删掉，只留下`natas28`。这样就成功插入了一个新的`natas28`用户。
+
+最后拿到`natas28`的密码
+
+```
+JWwR438wkgTsNKBbcJoowyysdM82YjeF
+```
