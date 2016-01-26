@@ -145,3 +145,31 @@ PHP源码
 ```
 U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
 ```
+
+# Level11
+
+PHP源码核心部分
+
+{% gist hrl/e6bdaa31a7f220f0bc0c %}
+
+根据key做了一个简单的xor加密
+
+加密后的数据为`ClVLIh4ASCsCBE8lAxMacFMZV2hdVVotEhhUJQNVAmhSEV4sFxFeaAw=`
+
+加密前的数据为`{"showpassword":"no","bgcolor":"#ffffff"}`
+
+于是运行以下python代码尝试得到key
+
+{% gist hrl/836d0f39f53434633b00 %}
+
+算出`qw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jq`，得到key`qw8J`
+
+将data修改为`{"showpassword":"yes","bgcolor":"#ffffff"}` 
+
+用算出的key加密得到新的cookie`ClVLIh4ASCsCBE8lAxMacFMOXTlTWxooFhRXJh4FGnBTVF4sFxFeLFMK`
+
+用新的cookie访问得到natas12的密码
+
+```
+EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3
+```
