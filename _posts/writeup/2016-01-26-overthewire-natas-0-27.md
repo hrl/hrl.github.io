@@ -217,3 +217,21 @@ PHP源码
 ```
 AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J
 ```
+
+# Level15
+
+PHP源码
+
+{% gist hrl/ba1fe0d2d990da114ba5 %}
+
+总之先测试一下用户名，发现`natas16`确实存在；从代码里可以看出，我们只能知道这个语句返回的结果是否大于0，那么下一步只有盲注密码了…
+
+看了看数据库定义，password最长为64，字符范围根据之前的密码应该是[0-9A-Za-z]，然后写个脚本慢慢跑吧…
+
+{% gist hrl/b216dc46fbaf8fc3b155 %}
+
+最后拿到natas16的密码
+
+```
+WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
+```
