@@ -118,3 +118,16 @@ PHP源码
 ```
 nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
 ```
+
+# Level10
+
+PHP源码
+{% gist hrl/4f05498649b911b380c3 %}
+
+可见过滤了 `;|&` ，于是去掉Level9末尾的 `;` 提交`. /etc/natas_webpass/natas11`
+
+只查看 `/etc/natas_webpass/natas11` 的部分，得到natas11的密码
+
+```
+U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
+```
