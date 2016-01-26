@@ -363,3 +363,15 @@ PHP源码
 ```
 OsRmXFguozKpTZZ5X14zNO43379LZveg
 ```
+
+# Level24
+
+PHP源码
+
+{% gist hrl/b0c6a1bc847a70d68afd %}
+
+看看[文档](http://php.net/manual/en/function.strcmp.php)，发现这么一句`strcmp("foo", array()) => NULL + PHP Warning`，然后就把passwd改成passwd[]，不填内容提交，会出现Warning和密码。拿到natas25的密码
+
+```
+GHF6X7YwACaYYssHVY05cFq83hRktl4c
+```
