@@ -58,3 +58,17 @@ Access disallowed. You are visiting from "" while authorized users should come o
 ```
 iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
 ```
+
+# Level5
+
+提示信息
+
+```
+Access disallowed. You are not logged in
+```
+
+查看Cookie可以看到 `loggedin=0` ，修改成1后访问，得到natas6的密码
+
+```
+aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1
+```
