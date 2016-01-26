@@ -92,3 +92,17 @@ PHP源码
 ```
 DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe
 ```
+
+# Level8
+
+PHP源码
+{% gist hrl/836e7ec4d18b2a4ea551 %}
+
+于是运行以下python代码算出原始secret
+{% gist hrl/bee0327be21e3f77d2e8 %}
+
+得到 `oubWYf2kBq` ，提交后得到natas9的密码
+
+```
+W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl
+```
