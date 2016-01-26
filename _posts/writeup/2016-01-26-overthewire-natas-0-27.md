@@ -235,3 +235,18 @@ PHP源码
 ```
 WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
 ```
+
+# Level16
+
+PHP源码
+
+{% gist hrl/241217da12b1eb9a96db %}
+
+把大部分特殊字符都过滤了，不过$key是包在双引号里的，所以可以用$(statements)的方式来执行语句返回一个结果到$key里，其余的思路跟上一题差不多
+
+{% gist hrl/3b5eafb9f09f43f5f2f5 %}
+
+最后拿到natas17的密码
+```
+8Ps3H0GWbn5rd9S7GmAdgQNdkhPkq9cw
+```
