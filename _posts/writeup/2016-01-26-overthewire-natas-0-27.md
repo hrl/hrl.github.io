@@ -106,3 +106,15 @@ PHP源码
 ```
 W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl
 ```
+
+# Level9
+PHP源码
+{% gist hrl/92b0b5717ff32d3a83f1 %}
+
+参考Level7，猜测可以从 `/etc/natas_webpass/natas10` 得到密码
+
+于是提交 `. /etc/natas_webpass/natas10;` ，得到natas10的密码
+
+```
+nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
+```
