@@ -189,3 +189,19 @@ PHP源码核心部分
 ```text
 jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY
 ```
+
+# Level13
+
+PHP源码，与Level12不同的部分
+
+{% gist hrl/6ab95d932e81a5f12e09 %}
+
+这次加了一个文件头的检测，于是我们加一个假的文件头，变成
+
+{% gist hrl/a4975dfd6c1a2bb45489 %}
+
+之后访问上传上去的php页面得到natas14的密码
+
+```text
+Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1
+```
