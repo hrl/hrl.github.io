@@ -285,3 +285,33 @@ PHP源码核心部分
 ```
 4IwIrekcuZlA9OsjOkoUtwU6lhokCPYs
 ```
+
+# Level19
+
+没有给源码
+
+{% gist hrl/c1ef69c936a536c93e1b %}
+
+总之先弄几个ID看看吧，拿到了
+
+```
+3433302d61646d696e
+```
+
+```
+3130302d61646d696e
+```
+
+```
+3237342d61646d696e
+```
+
+大概是`3x3x3x2d61646d696e`的感觉，剩下的部分跟上一题一样了
+
+{% gist hrl/f796d44f07ef5fb28c0a %}
+
+最后拿到natas20的密码
+
+```
+eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
+```
