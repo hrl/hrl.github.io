@@ -44,3 +44,17 @@ sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
 ```
 Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
 ```
+
+# Level4
+
+提示信息
+
+```
+Access disallowed. You are visiting from "" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"
+```
+
+修改Header `Referer: http://natas5.natas.labs.overthewire.org/` 之后访问，得到natas5的密码
+
+```
+iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
+```
