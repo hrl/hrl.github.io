@@ -30,3 +30,17 @@ date: 2016-01-26T16:24:00+08:00
 ```
 sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
 ```
+
+# Level3
+
+这次信息变成了
+{% gist hrl/49993f0a632c84b8ebb9 %}
+
+注意后一句话，查看/robots.txt可以看到一个被禁止的目录
+{% gist hrl/c0827b90922b5c029f23 %}
+
+进去只有一个users.txt，里面存着natas4的密码
+
+```
+Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
+```
