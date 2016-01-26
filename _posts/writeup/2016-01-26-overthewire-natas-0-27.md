@@ -269,3 +269,19 @@ PHP源码
 ```
 xvKIqDjy4OPv7wCRgDlmj0pFsCsDjhdP
 ```
+
+# Level18
+
+PHP源码核心部分
+
+{% gist hrl/9dff53292c3db22a04e3 %}
+
+大概就是读了下cookie里的PHPSESSID，然后就当你是这个session对应的用户了，猜测这640个id里肯定有一个是admin的，于是直接穷举吧…
+
+{% gist hrl/92b01d1764f48c7cdace %}
+
+最后拿到natas19的密码
+
+```
+4IwIrekcuZlA9OsjOkoUtwU6lhokCPYs
+```
