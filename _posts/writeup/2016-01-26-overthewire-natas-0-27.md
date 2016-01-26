@@ -327,3 +327,15 @@ PHP源码核心部分
 ```
 IFekPyrQXftziDEsUr3x21sYuahypdgJ
 ```
+
+# Level21
+
+按他的指示去隔壁，PHP源码核心部分
+
+{% gist hrl/e85c84200758995d0f45 %}
+
+直接在表单里加个admin项，填1就行了…拿到natas22的密码
+
+```
+chG9fbe1Tq2eWVMgjYYD1MsfIvN461kJ
+```
