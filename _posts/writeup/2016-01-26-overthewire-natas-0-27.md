@@ -393,3 +393,19 @@ PHP源码
 ```
 oGgWAJ7zcGT28vYazGo4rkhOPDhBu34T
 ```
+
+# Level26
+
+PHP源码核心部分
+
+{% gist hrl/850d503df8b251bc9e9d %}
+
+发现用到了`unserialize`，代码里还有个奇怪的Logger。于是自己试了试，发现`serialize`会把实例内部属性给dump出来，然后`unserialize`的时候会去读属性，这样构造函数不一定能用上，不过析构函数是肯定可以用得上的…于是写了下面的php代码来试图往img目录里写一个php文件
+
+{% gist hrl/91ceeee64d25ca620c1a %}
+
+然后访问`img/yoooo.php`，拿到natas27的密码
+
+```
+55TBjpPZUUJgVP5b3BnbG6ON9uDPVzCJ
+```
