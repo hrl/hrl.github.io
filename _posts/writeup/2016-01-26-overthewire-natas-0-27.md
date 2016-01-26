@@ -59,10 +59,7 @@ iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
 # Level5
 
 提示信息
-
-```
-Access disallowed. You are not logged in
-```
+{% gist hrl/643b9f55f2090c0e5ba5 %}
 
 查看Cookie可以看到 `loggedin=0` ，修改成1后访问，得到natas6的密码
 
