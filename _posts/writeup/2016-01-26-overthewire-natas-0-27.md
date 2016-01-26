@@ -72,3 +72,16 @@ Access disallowed. You are not logged in
 ```
 aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1
 ```
+
+# Level6
+
+PHP源码
+{% gist hrl/d8b16f4c3cbeb5bb12fb %}
+
+于是访问 `/includes/secret.inc` ，得到`$secret = "FOEIUWGHFEEUHOFUOIU";`
+
+提交后得到natas7的密码
+
+```
+7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
+```
