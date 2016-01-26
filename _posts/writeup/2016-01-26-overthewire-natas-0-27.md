@@ -339,3 +339,15 @@ IFekPyrQXftziDEsUr3x21sYuahypdgJ
 ```
 chG9fbe1Tq2eWVMgjYYD1MsfIvN461kJ
 ```
+
+# Level22
+
+PHP源码
+
+{% gist hrl/39cd91cea9b536cbcfe1 %}
+
+url里加个?revelio=1就行，Postman/Burp或者写脚本不自动跟随重定向就可以看到密码。拿到natas23的密码
+
+```
+D0vlad33nQF0Hz2EP255TP5wSW9ZsRSE
+```
