@@ -4,7 +4,7 @@ title: OverTheWire Natas 0-27
 modified:
 categories: writeup
 excerpt:
-tags: []
+tags: [OverTheWire, Natas, Writeup, Hack, Web]
 image:
   feature:
 share: true
