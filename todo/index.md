@@ -15,7 +15,7 @@ SICP
 : 第四章
 : 第五章
 
-MIPS (FPGA)
+<del>MIPS (SystemVerilog)</del> 2013.03.01
 : <del>单周期24条指令</del> 2016.02.24
 : <del>单周期中断(+3指令)</del> 2016.02.28
 : <del>理想5段流水线</del> 2016.02.28
