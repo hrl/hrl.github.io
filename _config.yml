@@ -67,6 +67,8 @@ owner:
     verify:
     ad-client:
     ad-slot:
+  baidu:
+    analytics: f1adcb06218353bdd77c76b5a7ac2f43
   bing-verify:
 
 comments: true
