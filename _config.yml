@@ -49,7 +49,7 @@ titlecase: true
 owner:
   name: Panda
   avatar: panda.jpg
-  email: i at pandas.moe
+  email: base64:aUBwYW5kYXMubW9l
   disqus-shortname: bamboo-forest
   twitter: #username
   facebook: #username
