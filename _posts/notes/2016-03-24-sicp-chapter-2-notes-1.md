@@ -65,7 +65,7 @@ Scheme提供了称为*序对*的复合结构，这种结构由`cons`定义，由
 
 一般而言，我们总可以将数据定义为一组适当的选择函数和构造函数，以及为使这些过程成为一套合法表示，它们所必须满足的一组特定条件。
 
-考虑序对的概念，如果我们能实现`cons`、`car`、`cdr`三个操作，使得`(define z (cons x y))`后，`(car z)`就是`x`，`(cdr z)`就是`y`，那么我们可以说我们实现了Scheme里原有的序对基础。
+考虑序对的概念，如果我们能实现`cons`、`car`、`cdr`三个操作，使得`(define z (cons x y))`后，`(car z)`就是`x`，`(cdr z)`就是`y`，那么我们就可以说我们实现了Scheme里原有的序对基础。
 
 然而，我们可以不用任何数据结构，只使用过程便实现序对：
 {% highlight scheme %}
@@ -103,10 +103,10 @@ Scheme提供了称为*序对*的复合结构，这种结构由`cons`定义，由
 {% highlight scheme %}
 (define (inc n) (+ n 1))
 
-(define (int church-numeral)
+(define (church-numeral->int church-numeral)
   ((church-numeral inc) 0))
 
-(int (add one two)) ; 3
+(church-numeral->int (add one two)) ; 3
 {% endhighlight %}
 
 数据的过程性表示将在我们的程序设计宝库里扮演一种核心角色，有关的程序设计风格通常称为*消息传递*。
