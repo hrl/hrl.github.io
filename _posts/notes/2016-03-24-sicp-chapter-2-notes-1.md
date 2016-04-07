@@ -97,7 +97,7 @@ Scheme提供了称为*序对*的复合结构，这种结构由`cons`定义，由
 (define (add a b)
   (lambda (f) (lambda (x) ((a f) ((b f) x)))))
 {% endhighlight %}
-这一表示形式称为`Church计数`
+这一表示形式称为*Church计数*。
 
 对数的加被表示为了函数的调用，可以通过下面的过程将之转换为数：
 {% highlight scheme %}
