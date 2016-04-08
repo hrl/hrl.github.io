@@ -22,7 +22,9 @@ GET / HTTP/1.1
 Host: h.nimingban.com
 {% endhighlight %}
 
-嗯…结果居然返回正常…然而一样的请求丢burp里也是一直出不来response…看来不太像后台服务器的问题
+嗯…结果居然返回正常…看来不太像后台服务器的问题
+
+然而一样的请求丢burp里也是一直出不来response…
 
 然后我试着抓包看了看，telnet发出的请求跟burp发出的请求，唯一的区别只在：
 
