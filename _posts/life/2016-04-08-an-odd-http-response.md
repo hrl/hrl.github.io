@@ -33,7 +33,7 @@ Host: h.nimingban.com
 
 为了验证这个想法，我写了段小脚本模拟这两种发送请求的方式：
 
-{% highlight python3 %}
+{% highlight python %}
 #!/usr/bin/env python
 # encoding: utf-8
 
