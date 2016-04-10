@@ -60,7 +60,41 @@ date: 2016-03-20T20:41:24+08:00
 
 考虑以下过程：
 
-{% gist hrl/f60eba3b63c6233e05c6 %}
+{% highlight scheme %}
+(define (fact-r n)
+  (if (= n 1)
+      1
+      (* n (fact-r (- n 1)))))
+
+(define (fact-i n)
+  (fact-iter 1 1 n))
+
+(define (fact-iter product counter max-count)
+  (if (> counter max-count)
+      product
+      (fact-iter (* counter product)
+                 (+ counter 1)
+                 max-count)))
+
+;; expand (fact-r 4)
+(fact-r 4)
+(* 4 (fact-r 3))
+(* 4 (* 3 (fact-r 2)))
+(* 4 (* 3 (* 2 (fact-r 1))))
+(* 4 (* 3 (* 2 1)))
+(* 4 (* 3 2))
+(* 4 6)
+24
+
+;; expand (fact-i 4)
+(fact-i 4)
+(fact-iter  1 1 4)
+(fact-iter  1 2 4)
+(fact-iter  2 3 4)
+(fact-iter  6 4 4)
+(fact-iter 24 7 4)
+24
+{% endhighlight %}
 
 其中`fact-i`为**迭代计算过程**，`fact-r`为**递归计算过程**，它们在语法形式上都是**递归过程**。
 
