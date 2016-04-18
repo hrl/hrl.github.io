@@ -33,7 +33,58 @@ Host: h.nimingban.com
 
 为了验证这个想法，我写了段小脚本模拟这两种发送请求的方式：
 
-{% gist hrl/d58ae1bd31e3549d4d83720d21347c20 %}
+{% highlight python %}
+#!/usr/bin/env python
+# encoding: utf-8
+
+import socket
+
+HOST = "h.nimingban.com"
+PORT = 80
+REQ_LINES = (
+    b"GET / HTTP/1.1\r\n",
+    b"Host: h.nimingban.com\r\n",
+    b"\r\n"
+)
+
+
+def send_one_by_one(HOST, PORT, REQ_LINES):
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((HOST, PORT))
+    for line in REQ_LINES:
+        s.sendall(line)
+
+    data = None
+    try:
+        data = s.recv(1024)
+    except OSError as e:
+        print(e)
+    finally:
+        s.close()
+    return data
+
+
+def send_all(HOST, PORT, REQ_LINES):
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((HOST, PORT))
+    s.sendall(b"".join(REQ_LINES))
+
+    data = None
+    try:
+        data = s.recv(1024)
+    except OSError as e:
+        print(e)
+    finally:
+        s.close()
+    return data
+
+
+if __name__ == '__main__':
+    print("Send one by one:")
+    print(send_one_by_one(HOST, PORT, REQ_LINES))
+    print("Send all:")
+    print(send_all(HOST, PORT, REQ_LINES))
+{% endhighlight %}
 
 结果也是一行一行发就可以…一次发完就拿不到response
 
