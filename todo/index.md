@@ -17,6 +17,8 @@ SICP
 
 **ALG**
 
+Irisu
+
 Java
 
 <del>MIPS (SystemVerilog)</del> 2016.03.01
