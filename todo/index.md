@@ -17,7 +17,7 @@ SICP
 
 **ALG**
 
-Irisu
+**Irisu**
 
 Java
 
