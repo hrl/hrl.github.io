@@ -19,6 +19,8 @@ SICP
 
 **Irisu**
 
+**Haskell**
+
 Java
 
 <del>MIPS (SystemVerilog)</del> 2016.03.01
