@@ -21,7 +21,7 @@ SICP
 
 **Haskell**
 
-**PCL**
+PCL
 
 <del>MIPS (SystemVerilog)</del> 2016.03.01
 : <del>单周期24条指令</del> 2016.02.24
