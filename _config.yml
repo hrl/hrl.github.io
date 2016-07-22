@@ -5,8 +5,8 @@ locale: zh_CN
 description: #
 logo: site-logo.jpg
 search: true
-url: https://blog.pandas.moe
-enforce_ssl: blog.pandas.moe
+url: http://blog.pandas.moe
+#enforce_ssl: blog.pandas.moe
 
 # Jekyll configuration
 
