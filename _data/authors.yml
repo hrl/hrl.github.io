@@ -2,8 +2,8 @@
 
 panda:
   name: Panda
-  web: http://blog.pandas.moe
-  email: i@pandas.moe
+  web: https://blog.pandas.moe
+  email: base64:aUBwYW5kYXMubW9l
   bio: ""
   avatar: panda.jpg
   twitter: #
