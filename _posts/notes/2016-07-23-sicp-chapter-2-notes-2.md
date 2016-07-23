@@ -36,21 +36,18 @@ date: 2016-07-23T17:19:58+08:00
 
 `(cons 1 (cons 2 (cons 3 (cons 4 nil))))`
 
-![将序列1，2，3，4表示为序对的链]({{ site.url }}/images/SICP/ch2-Z-G-13.gif)  
+![将序列1，2，3，4表示为序对的链]({{ site.url }}/images/SICP-ch2-Z-G-13.gif)  
 图1 将序列1，2，3，4表示为序对的链[^1]  
-[^1]: https://mitpress.mit.edu/sicp/full-text/book/ch2-Z-G-13.gif
 
 这样的序对的序列称为一个表，上述过程也可以简写成`(list 1 2 3 4)`，它返回表`(1 2 3 4)`
 
 将表的表示推广到元素本身也是序列的序列，我们可以进一步地得到更复杂的结构，如树：
 
-![由 (cons (list 1 2) (list 3 4)) 形成的结构]({{ site.url }}/images/SICP/ch2-Z-G-15.gif)  
+![由 (cons (list 1 2) (list 3 4)) 形成的结构]({{ site.url }}/images/SICP-ch2-Z-G-15.gif)  
 图2 由`(cons (list 1 2) (list 3 4))`形成的结构[^2]  
-[^2]: https://mitpress.mit.edu/sicp/full-text/book/ch2-Z-G-15.gif
 
-![图3 将图2中的表结构看作树]({{ site.url }}/images/SICP/ch2-Z-G-16.gif)  
+![图3 将图2中的表结构看作树]({{ site.url }}/images/SICP-ch2-Z-G-16.gif)  
 图3 将图2中的表结构看作树[^3]  
-[^3]: https://mitpress.mit.edu/sicp/full-text/book/ch2-Z-G-16.gif
 
 在表的基础上，`car`可以解释为取表的第一项，`cdr`可以解释为取表的余下项构成的子表，而`cons`则可以解释为连接元素与表，利用他们我们便可以构造出更多的表操作。
 
@@ -115,9 +112,8 @@ date: 2016-07-23T17:19:58+08:00
 
 如果我们将这两个过程想象成两个信号处理系统，那么其各个步骤可以自然地抽象为*枚举器*、*过滤器*、*映射器*、*累积器*，如图：
 
-![图4 两个过程的信号流图揭示出的共性]({{ site.url }}/images/SICP/ch2-Z-G-17.gif)  
+![图4 两个过程的信号流图揭示出的共性]({{ site.url }}/images/SICP-ch2-Z-G-17.gif)  
 图4 两个过程的信号流图揭示出的共性[^4]  
-[^4]: https://mitpress.mit.edu/sicp/full-text/book/ch2-Z-G-17.gif
 
 但原始版本的过程过于深入数据结构的细节，将各个处理步骤混合在了一起，没有展现出这一信号流的结构，缺乏组织性。
 
@@ -168,3 +164,10 @@ date: 2016-07-23T17:19:58+08:00
 # 带有通用型操作的系统
 
 待续
+
+#### References
+
+[^1]: https://mitpress.mit.edu/sicp/full-text/book/ch2-Z-G-13.gif  
+[^2]: https://mitpress.mit.edu/sicp/full-text/book/ch2-Z-G-15.gif  
+[^3]: https://mitpress.mit.edu/sicp/full-text/book/ch2-Z-G-16.gif  
+[^4]: https://mitpress.mit.edu/sicp/full-text/book/ch2-Z-G-17.gif  
