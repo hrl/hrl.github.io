@@ -113,7 +113,7 @@ Scheme提供了称为*序对*的复合结构，这种结构由`cons`定义，由
 
 # 层次性数据和闭包性质
 
-见：[层次性数据和闭包性质]({% post_url /notes/2016-03-24-sicp-chapter-2-notes-2 %})
+见：[层次性数据和闭包性质]({% post_url /notes/2016-07-23-sicp-chapter-2-notes-2 %})
 
 # 符号数据
 
