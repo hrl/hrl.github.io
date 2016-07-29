@@ -157,7 +157,7 @@ even-fibs：
 
 # 符号数据
 
-待续
+见：[符号数据]({% post_url /notes/2016-07-24-sicp-chapter-2-notes-3 %})
 
 # 抽象数据的多重表示
 
