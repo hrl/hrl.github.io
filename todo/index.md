@@ -9,7 +9,7 @@ image:
 ---
 
 SICP
-: <del>第一章</del> 2016.02.10
+: <del>第一章</del> 2016.02.10, <del>Notes</del> 2016.03.20
 : <del>第二章</del> 2016.03.18, **Notes**
 : <del>第三章</del> 2016.07.15, Notes
 : **第四章**
