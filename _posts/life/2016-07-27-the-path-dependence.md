@@ -171,7 +171,7 @@ $arr_b = array_map(function ($item) {
 
 问题在于PHP既不是词法作用域也不是动态作用域，PHP只有本地作用域与全局作用域（好吧还有一个所谓的超全局作用域，但这东西看起来更像是语言的内置特殊形式）
 
-所以你只好用`use`来给函数打个洞，把变量传进去：
+PHP为了解决这个问题，提供了一个`use`关键字用在匿名函数定义处来给函数打洞，把变量传进去：
 
 {% highlight php %}
 $x = 100;
@@ -183,7 +183,32 @@ $arr_b = array_map(function ($item) use ($x) {
 
 只是一个简单的匿名函数似乎还好，但当你试图嵌套多层匿名函数时，你恐怕得从上到下把每个函数都打个大洞才行了…
 
-坑还有很多，不详细写了（
+顺便一提，如果你在类的方法里使用匿名函数，它会被隐式绑定上`$this`变量（指向实例）…
+
+{% highlight php %}
+class Foo {
+    public function bar() {
+        return function () {
+            var_dump($this);
+        };
+    }
+}
+{% endhighlight %}
+
+过了一个版本号之后，又冒出来了一个静态匿名函数，不会被自动绑定上`$this`
+
+{% highlight php %}
+class Foo {
+    public function bar() {
+        return static function () {
+        };
+    }
+}
+{% endhighlight %}
+
+迷得不行…
+
+好了好了不详细写了，PHP毕竟不是这篇博客的重点（
 
 # 另一种选择
 
