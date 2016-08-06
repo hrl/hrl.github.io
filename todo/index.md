@@ -19,7 +19,7 @@ SICP
 
 **Irisu**
 
-**Haskell**
+Haskell
 
 PCL
 
