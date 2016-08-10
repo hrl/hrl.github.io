@@ -224,3 +224,69 @@ class Foo {
 
 # 另一种选择
 
+说回Web与模板语言。
+
+我最开始接触到的模板语言是[Jinja](http://jinja.pocoo.org/)、[mako](http://www.makotemplates.org/)之类，Jinja大概长这样：
+
+{% highlight Jinja %}
+<ul>
+{% for user in users %}
+  <li><a href="{{ user.url }}">{{ user.username }}</a></li>
+{% endfor %}
+</ul>
+{% endhighlight %}
+
+可能是先入为主的原因，我一直以为模板语言就是像上面这样了——用一堆半成品前端字符串配上奇怪的特殊符号来格式化出另一堆前端**字符串**。
+
+直到我后来看到了[这个](http://franz.com/support/documentation/current/doc/aserve/aserve.html#c-location-authorizer)：
+
+{% highlight CommonLisp %}
+(publish :path "/local-secret-auth"
+    :content-type "text/html"
+    :authorizer (make-instance 'location-authorizer
+                         :patterns '((:accept "127.0" 8)
+                                     (:accept "tiger.franz.com")
+                                     :deny))
+
+    :function
+    #'(lambda (req ent)
+        (with-http-response (req ent)
+           (with-http-body (req ent)
+               (html (:head (:title "Secret page"))
+                     (:body (:b "Congratulations. ")
+                       "You made it to the secret page"))))))
+{% endhighlight %}
+
+还有[这个](https://common-lisp.net/project/xhtmlambda/)：
+
+{% highlight CommonLisp %}
+(with-html-syntax-output (*standard-output* :syntax :standard :print-pretty t)
+                  (body (:style "color: red")
+                        (p ()
+                           "Some text here"
+                           (ul () (loop for i below 5
+                                        collect (li () (format nil "Line ~D" i)))))))
+
+;;  <body style="color: red">
+;;    <p>
+;;      Some text here
+;;      <ul>
+;;        <li>
+;;          Line 0
+;;        </li>
+;;        <li>
+;;          Line 1
+;;        </li>
+;;        <li>
+;;          Line 2
+;;        </li>
+;;        <li>
+;;          Line 3
+;;        </li>
+;;        <li>
+;;          Line 4
+;;        </li>
+;;      </ul>
+;;    </p>
+;;  </body> 
+{% endhighlight %}
