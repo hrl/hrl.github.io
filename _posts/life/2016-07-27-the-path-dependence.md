@@ -212,7 +212,7 @@ class Foo {
 
 好了好了不说了，关于PHP的坑先写到这里吧:(
 
-然而纵使有这么多坑，[PHP的使用率](http://www.tiobe.com/tiobe-index/php/)还是很高（
+然而纵使有这么多坑，PHP的使用率（[TIOBE](http://www.tiobe.com/tiobe-index/php/)、[IEEE](http://spectrum.ieee.org/computing/software/the-2016-top-programming-languages)）还是很高（
 
 作为模板语言诞生的PHP可能确实比较方便吧，考虑到那些所谓的一键搭建的环境，即使放到今天恐怕也是这样。加上早期的网站功能往往并不复杂，许多刚起步阶段的项目就直接用了起来。到后来项目越来越大，一部分早期代码的编写者可能已经不在组里了，加上需要不断开发新需求，也没什么人有动力去做大的改变，只好在原先的基础上继续写下去（，就这样陷入了路径依赖的死循环里。
 
