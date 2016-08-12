@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 历史的进程
+title: 历史的行程
 modified:
 categories: life
 excerpt:
@@ -290,3 +290,17 @@ class Foo {
 ;;    </p>
 ;;  </body> 
 {% endhighlight %}
+
+直接从代码到代码，而不是从字符串到字符串。同时你也不需要[emmet](http://www.emmet.io/)这类工具帮你生成冗长的HTML代码了。
+
+说回来，对于HTML这种高度结构化的语言，为什么当时会先想着去当字符串处理而不是当成树去处理呢…
+
+甚至更进一步的说，HTML、XML这种结构完全可以转化成更简洁的[S表达式](https://en.wikipedia.org/wiki/S-expression)。S表达式出现得要早得多，但XML这种更加冗余的结构却更流行（
+
+如果当时直接用S表达式表达HTML，浏览器里带上个Scheme解释器而不是十天造出来的JS，恐怕现在就不会有JSX这类东西，也没什么统一前后端语言的问题了（
+
+[![AlienTechnology]({{ site.url }}/lisplogo_256.png)](http://www.lisperati.com/logo.html)
+
+可惜历史并不是这样的（
+
+<del>一种技术的发展啊，当然要靠自我奋斗，但是也要考虑到历史的行程</del>
