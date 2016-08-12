@@ -299,7 +299,7 @@ class Foo {
 
 如果当时直接用S表达式表达HTML，浏览器里带上个Scheme解释器而不是十天造出来的JS，恐怕现在就不会有JSX这类东西，也没什么统一前后端语言的问题了（
 
-[![AlienTechnology]({{ site.url }}/lisplogo_256.png)](http://www.lisperati.com/logo.html)
+[![AlienTechnology]({{ site.url }}/images/lisplogo_fancy_256.png)](http://www.lisperati.com/logo.html)
 
 可惜历史并不是这样的（
 
