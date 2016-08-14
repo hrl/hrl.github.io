@@ -230,13 +230,13 @@ class Foo {
 
 我最开始接触到的模板语言是[Jinja](http://jinja.pocoo.org/)、[mako](http://www.makotemplates.org/)之类，Jinja大概长这样：
 
-{% highlight Jinja %}
+```
 <ul>
-\{% for user in users %\}
+{% for user in users %}
   <li><a href="{{ user.url }}">{{ user.username }}</a></li>
-\{% endfor %\}
+{% endfor %}
 </ul>
-{% endhighlight %}
+```
 
 可能是先入为主的原因，我一直以为模板语言就是像上面这样了——用一堆半成品前端字符串配上奇怪的特殊符号来格式化出另一堆前端**字符串**。
 
