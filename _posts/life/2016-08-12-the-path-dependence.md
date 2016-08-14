@@ -263,7 +263,7 @@ class Foo {
 
 还有[这个](https://common-lisp.net/project/xhtmlambda/)：
 
-{% highlight common_lisp %}
+{% highlight scheme %}
 (with-html-syntax-output (*standard-output* :syntax :standard :print-pretty t)
                   (body (:style "color: red")
                         (p ()
