@@ -117,11 +117,11 @@ Scheme提供了称为*序对*的复合结构，这种结构由`cons`定义，由
 
 # 符号数据
 
-待续
+见：[符号数据]({% post_url /notes/2016-07-24-sicp-chapter-2-notes-3 %})
 
 # 抽象数据的多重表示
 
-待续
+见：[抽象数据的多重表示]({% post_url /notes/2016-07-26-sicp-chapter-2-notes-4 %})
 
 # 带有通用型操作的系统
 

@@ -46,7 +46,7 @@ date: 2016-07-23T17:19:58+08:00
 ![由 (cons (list 1 2) (list 3 4)) 形成的结构]({{ site.url }}/images/SICP/ch2-Z-G-15.gif)  
 图2 由`(cons (list 1 2) (list 3 4))`形成的结构[^2]  
 
-![图3 将图2中的表结构看作树]({{ site.url }}/images/SICP/ch2-Z-G-16.gif)  
+![将图2中的表结构看作树]({{ site.url }}/images/SICP/ch2-Z-G-16.gif)  
 图3 将图2中的表结构看作树[^3]  
 
 在表的基础上，`car`可以解释为取表的第一项，`cdr`可以解释为取表的余下项构成的子表，而`cons`则可以解释为连接元素与表，利用他们我们便可以构造出更多的表操作。
@@ -161,7 +161,7 @@ even-fibs：
 
 # 抽象数据的多重表示
 
-待续
+见：[抽象数据的多重表示]({% post_url /notes/2016-07-26-sicp-chapter-2-notes-4 %})
 
 # 带有通用型操作的系统
 
