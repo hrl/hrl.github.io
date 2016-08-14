@@ -36,7 +36,7 @@ date: 2016-07-26T10:38:49+08:00
 
 这一节主要讲的就是如何构造能够在多种表示上操作的*通用型过程*，以提供数据抽象。
 
-以复数为例，我们对外至少需要`real-part`、`imag-part`、`magnitude`、`angle`以提供基本的获取值的操作，同时实现过程`make-from-real-imag`与`make-from-mag-ang`来通过不同的表示构造复数。
+以复数为例，我们对外至少需要`real-part`、`imag-part`、`magnitude`、`angle`以提供基本的获取值的操作，同时实现过程`make-from-real-imag`与`make-from-mag-ang`来以不同的表示构造复数。
 
 ![通用型复数算术系统的结构]({{ site.url }}/images/SICP/ch2-Z-G-62.gif)  
 图1 通用型复数算术系统的结构[^1]
