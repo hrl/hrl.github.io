@@ -239,13 +239,12 @@ class Foo {
 </ul>
 {% endraw %}
 {% endhighlight %}
-```
 
 可能是先入为主的原因，我一直以为模板语言就是像上面这样了——用一堆半成品前端字符串配上奇怪的特殊符号来格式化出另一堆前端**字符串**。
 
 直到我后来看到了[这个](http://franz.com/support/documentation/current/doc/aserve/aserve.html#c-location-authorizer)：
 
-{% highlight commonlisp %}
+{% highlight clisp %}
 (publish :path "/local-secret-auth"
     :content-type "text/html"
     :authorizer (make-instance 'location-authorizer
