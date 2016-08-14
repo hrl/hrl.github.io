@@ -265,11 +265,11 @@ class Foo {
 
 {% highlight cl %}
 (with-html-syntax-output (*standard-output* :syntax :standard :print-pretty t)
-                  (body (:style "color: red")
-                        (p ()
-                           "Some text here"
-                           (ul () (loop for i below 5
-                                        collect (li () (format nil "Line ~D" i)))))))
+  (body (:style "color: red")
+        (p ()
+           "Some text here"
+           (ul () (loop for i below 5
+                        collect (li () (format nil "Line ~D" i)))))))
 
 ;;  <body style="color: red">
 ;;    <p>
