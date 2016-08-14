@@ -11,7 +11,7 @@ share: true
 date: 2016-08-12T19:10:29+08:00
 ---
 
-实习了一个月，bash、PHP、Go、前端全摸了一遍…
+实习了一个多月，bash、PHP、Go、前端全摸了一遍…
 
 啊，PHP…我实在是找不到词可以描述这个语言，写着写着感觉自己就精分了（
 
@@ -208,13 +208,15 @@ class Foo {
 }
 {% endhighlight %}
 
-迷得不行…
+我也不知道为什么匿名函数非得跟类实例搅和在一起（
 
 好了好了不说了，关于PHP的坑先写到这里吧:(
 
 然而纵使有这么多坑，PHP的使用率（[TIOBE](http://www.tiobe.com/tiobe-index/php/)、[IEEE](http://spectrum.ieee.org/computing/software/the-2016-top-programming-languages)）还是很高（
 
-作为模板语言诞生的PHP可能确实比较方便吧，考虑到那些所谓的一键搭建的环境，即使放到今天恐怕也是这样。加上早期的网站功能往往并不复杂，许多刚起步阶段的项目就直接用了起来。到后来项目越来越大，一部分早期代码的编写者可能已经不在组里了，加上需要不断开发新需求，也没什么人有动力去做大的改变，只好在原先的基础上继续写下去（，就这样陷入了路径依赖的死循环里。
+作为模板语言诞生的PHP可能确实比较方便吧，考虑到那些所谓的一键搭建的环境，即使放到今天恐怕也是这样。
+
+因为早期的网站功能往往并不复杂，许多刚起步阶段的项目就直接用了起来。到后来项目越来越大，一部分早期代码的编写者可能已经不在组里了，加上需要不断开发新需求，也没什么人有动力去做大的改变，只好在原先的基础上继续写下去（，就这样陷入了路径依赖的死循环里。
 
 随之而来的，还有工作机会的增多与新开发者的涌入。而PHP本身也顺应着这些项目在不断地变化，以至于到了今天的这个状态…
 
@@ -230,9 +232,9 @@ class Foo {
 
 {% highlight Jinja %}
 <ul>
-{% for user in users %}
+\{% for user in users %\}
   <li><a href="{{ user.url }}">{{ user.username }}</a></li>
-{% endfor %}
+\{% endfor %\}
 </ul>
 {% endhighlight %}
 
@@ -240,7 +242,7 @@ class Foo {
 
 直到我后来看到了[这个](http://franz.com/support/documentation/current/doc/aserve/aserve.html#c-location-authorizer)：
 
-{% highlight CommonLisp %}
+{% highlight Lisp %}
 (publish :path "/local-secret-auth"
     :content-type "text/html"
     :authorizer (make-instance 'location-authorizer
@@ -259,7 +261,7 @@ class Foo {
 
 还有[这个](https://common-lisp.net/project/xhtmlambda/)：
 
-{% highlight CommonLisp %}
+{% highlight lisp %}
 (with-html-syntax-output (*standard-output* :syntax :standard :print-pretty t)
                   (body (:style "color: red")
                         (p ()
