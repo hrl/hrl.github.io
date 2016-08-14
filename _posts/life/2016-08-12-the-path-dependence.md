@@ -244,7 +244,7 @@ class Foo {
 
 直到我后来看到了[这个](http://franz.com/support/documentation/current/doc/aserve/aserve.html#c-location-authorizer)：
 
-{% highlight clisp %}
+{% highlight common_lisp %}
 (publish :path "/local-secret-auth"
     :content-type "text/html"
     :authorizer (make-instance 'location-authorizer
@@ -263,7 +263,7 @@ class Foo {
 
 还有[这个](https://common-lisp.net/project/xhtmlambda/)：
 
-{% highlight lisp %}
+{% highlight common_lisp %}
 (with-html-syntax-output (*standard-output* :syntax :standard :print-pretty t)
                   (body (:style "color: red")
                         (p ()
